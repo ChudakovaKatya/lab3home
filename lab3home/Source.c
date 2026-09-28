@@ -1,20 +1,20 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <locale.h>
 int main()
 {
-	setlocale(LC_CTYPE, "RUS");
+	setlocale(LC_CTYPE, "UTF-8");
 	int barrel;
 	float resultb;
 	int gallon;
 	float resultg;
-	puts("Введите количество баррелей для расчета");
+	puts("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р±Р°СЂСЂРµР»РµР№ РґР»СЏ СЂР°СЃС‡РµС‚Р°");
 	scanf("%d", &barrel);
 	resultb = barrel;
-	printf("%d баррелей – это %f килограмм\n", barrel, resultb * 158.987);
+	printf("%d Р±Р°СЂСЂРµР»РµР№ вЂ“ СЌС‚Рѕ %f РєРёР»РѕРіСЂР°РјРј\n", barrel, resultb * 158.987);
 
-	printf("Введите количество галлонов для расчета");
+	printf("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РіР°Р»Р»РѕРЅРѕРІ РґР»СЏ СЂР°СЃС‡РµС‚Р°");
 	scanf("%d", &gallon);
 	resultg = gallon;
-	printf("%d галлона - это %f килограмм\n", gallon, resultg * 3.7854);
+	printf("%d РіР°Р»Р»РѕРЅР° - СЌС‚Рѕ %f РєРёР»РѕРіСЂР°РјРј\n", gallon, resultg * 3.7854);
 
 }
